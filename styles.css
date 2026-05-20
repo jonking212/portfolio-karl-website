@@ -1,0 +1,93 @@
+/* ═══ PROJECTS PAGE — extends style.css ═══ */
+
+.projects-main { padding-top: 80px; }
+
+.projects-hero {
+    padding: 140px 4% 80px;
+    text-align: center;
+    position: relative;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.projects-hero::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(200,169,126,0.04) 0%, transparent 70%);
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.projects-hero-content h1 {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+}
+
+.projects-hero-content p {
+    font-size: 1.05rem;
+    color: var(--text-dim);
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+/* Override project layout for standalone page */
+.projects-main .project-detail-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 4%;
+    border-bottom: 1px solid var(--border);
+}
+
+.projects-main .project-header { text-align: center; display: block; }
+.projects-main .project-title { margin-bottom: 0.5rem; }
+.projects-main .project-subtitle { margin-bottom: 1.5rem; }
+.projects-main .project-description { max-width: 650px; margin: 0 auto; }
+
+/* Carousel title */
+.carousel-title {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* CTA */
+.projects-cta {
+    padding: 6rem 4%;
+    text-align: center;
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--border);
+}
+
+.cta-content h2 {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+}
+
+.cta-content p {
+    font-size: 1rem;
+    color: var(--text-dim);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+/* Active nav */
+nav a.active { color: var(--accent); }
+
+@media (max-width: 768px) {
+    .projects-hero-content h1 { font-size: 2.2rem; }
+}

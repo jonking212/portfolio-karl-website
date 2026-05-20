@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karl-atangana.com/sitemap.xml
