@@ -800,6 +800,36 @@ section {
     gap: 0.5rem;
 }
 
+.tech-tags-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1.2rem;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    font-size: 0.65rem;
+    font-family: var(--font-mono);
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.project-live-link:hover {
+    background: var(--accent);
+    color: var(--bg);
+    transform: translateY(-2px);
+}
+
 .tech-tag {
     padding: 0.4rem 1rem;
     background: transparent;
